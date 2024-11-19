@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MunteanuPaulLab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Image
+                Source="vinyl.jpg"
+                HeightRequest="200"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Mai multe discuri cu muzica" />
+
+            <Label
+                Text="Buna, Sunt Paul si sunt pasionat de vinyl-uri"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="White" />
+
+            <Label
+                Text="Aceasta este prima mea aplicație"
+                FontSize="16"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Gray" />
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="Apasă-mă"
+                SemanticProperties.Hint="Numără de câte ori ai apăsat"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"
+                BackgroundColor="#D3B8AE"
+                TextColor="White" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
